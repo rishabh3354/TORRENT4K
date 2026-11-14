@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Torrent4K
+GenericName=Torrent Player
+Comment=Stream any torrent instantly - play while it downloads
+Icon=torrent4k
+Exec=torrent4k %U
+Terminal=false
+Categories=AudioVideo;Video;Player;Network;FileTransfer;P2P;
+MimeType=x-scheme-handler/magnet;application/x-bittorrent;
+Keywords=torrent;torrent client;torrent player;magnet;magnet link;bittorrent;stream;streaming;video;player;video player;4k;hdr;subtitles;chromecast;p2p;download;mpv;
+StartupWMClass=torrent4k

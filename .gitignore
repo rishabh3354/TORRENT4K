@@ -1,0 +1,7 @@
+*.pyo
+*.pyc
+.idea/
+build
+dist
+*.snap
+*.tar.gz

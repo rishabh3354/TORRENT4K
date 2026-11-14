@@ -1,0 +1,120 @@
+name: torrent4k
+base: core22
+version: '2026.11.13'
+# Store listing. The Snap Store searches title, summary and description: the words people type
+# ("torrent client", "stream torrent", "magnet") come first. Limits: title 40, summary 78.
+title: 'Torrent4K: Torrent Client & Video Player'
+summary: Stream torrents while they download - magnet links, 4K, subtitles, casting
+description: |
+  **Torrent4K is a torrent client and video player in one.** Paste a magnet link, open a .torrent file or search, and the video starts playing in seconds while the rest downloads in the background - in up to 4K, with every codec, HDR and surround sound format the built-in mpv player knows.
+
+  No separate media player, no waiting for the whole file: watch torrents the moment they start, on Ubuntu, Fedora, Debian, Linux Mint, Pop!_OS and any other Linux with Snap.
+
+  **Watch**
+  - Play while it downloads: the pieces you are about to watch come first, and seeking jumps straight there
+  - Subtitles from the torrent, your computer or online, with automatic sync and dual subtitles
+  - Next episode, skip intro and credits, picture and sound settings, picture-in-picture
+  - Cast to Chromecast and DLNA TVs, or control playback from your phone
+
+  **Find**
+  - Search several public torrent indexes at once; the best copy for your connection is picked for you
+  - Posters, episodes and similar titles for movies and shows
+  - My List: follow shows and RSS feeds
+
+  **Download**
+  - Queue, pause and reorder downloads, choose episodes, limit speed or use slow mode
+  - Kill switch: bind torrent traffic to your VPN interface, or use a SOCKS5 proxy
+  - Disk guard, private mode, parental lock, backup and restore
+
+  **Why Torrent4K**
+  - One app for finding, downloading and watching - no separate player needed
+  - 20 languages, black, dark and light themes
+  - Free to use. PRO: casting, phone remote, picture-in-picture and more, one-time payment
+
+  Only download and share content you have the right to.
+
+  Optional permissions: `sudo snap connect torrent4k:network-observe` (lists your VPN interface for the kill switch).
+website: https://warlordsoftwares.com/apps/linux-apps/
+contact: https://warlordsoftwares.com/contact-us/
+issues: https://github.com/rishabh3354/TORRENT4K/issues
+donation: https://paypal.me/TechRishabh/10
+license: Proprietary
+grade: stable
+confinement: strict
+
+icon: snap/gui/icon.png
+
+architectures:
+  - build-on: [amd64]
+
+environment:
+  # desktop libraries, fonts and the mpv player (0.41) come from content-snap-core22, the runtime the other
+  # Warlord Softwares video apps share (../../content-snap-core22)
+  SNAP_DESKTOP_RUNTIME: $SNAP/content-snap-core22
+
+apps:
+  torrent4k:
+    command: bin/desktop-launch $SNAP/bin/torrent4k
+    desktop: torrent4k.desktop
+    environment:
+      APP_PLATFORM: "SNAP"
+    plugs:
+      - home
+      - removable-media           # downloads on other drives
+      - network
+      - network-bind              # the local stream server, the phone remote, incoming peers
+      - network-status
+      - network-observe           # the VPN interface list for the kill switch (connect by hand)
+      - audio-playback
+      - desktop
+      - desktop-legacy
+      - gsettings
+      - x11                       # mpv draws into the window through an X11 window id (--wid)
+      - wayland
+      - unity7
+      - opengl                    # mpv's video output and hardware decoding
+      - screen-inhibit-control    # no screen saver while a video plays
+    slots:
+      - mpris                     # media keys and the desktop's media controls
+
+plugs:
+  gsettings:
+  gtk-3-themes:
+    interface: content
+    target: $SNAP/data-dir/themes
+    default-provider: gtk-common-themes
+  icon-themes:
+    interface: content
+    target: $SNAP/data-dir/icons
+    default-provider: gtk-common-themes
+  sound-themes:
+    interface: content
+    target: $SNAP/data-dir/sounds
+    default-provider: gtk-common-themes
+  content-snap-core22:
+    interface: content
+    target: $SNAP/content-snap-core22
+    default-provider: content-snap-core22
+
+parts:
+  snap-launcher:
+    plugin: dump
+    source: snap_launcher/
+    override-build: |
+      craftctl default
+      sed -i 's|Icon=.*|Icon=${SNAP}/meta/gui/icon.png|g' ${SNAPCRAFT_PART_SRC}/torrent4k.desktop
+      mkdir -p ${SNAPCRAFT_PART_INSTALL}/usr/share/applications/
+      cp -rf ${SNAPCRAFT_PART_SRC}/torrent4k.desktop ${SNAPCRAFT_PART_INSTALL}/usr/share/applications/torrent4k.desktop
+
+  torrent4k-binary:
+    plugin: dump
+    source: https://warlordsoftwares.com/static/app_builds/snap/Torrent4K.tar.gz
+    source-type: tar
+    override-build: |
+      # the archive holds the PyInstaller folder Torrent4K/ (snapcraft may or may not unwrap it)
+      SRC=.
+      [ -d Torrent4K ] && SRC=Torrent4K
+      mkdir -p ${SNAPCRAFT_PART_INSTALL}/opt/torrent4k ${SNAPCRAFT_PART_INSTALL}/bin
+      cp -a ${SRC}/. ${SNAPCRAFT_PART_INSTALL}/opt/torrent4k/
+      chmod +x ${SNAPCRAFT_PART_INSTALL}/opt/torrent4k/Torrent4K
+      ln -sf ../opt/torrent4k/Torrent4K ${SNAPCRAFT_PART_INSTALL}/bin/torrent4k

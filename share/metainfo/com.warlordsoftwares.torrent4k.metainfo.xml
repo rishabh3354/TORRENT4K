@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+	<id>com.warlordsoftwares.torrent4k</id>
+	<metadata_license>CC0-1.0</metadata_license>
+	<project_license>LicenseRef-proprietary=https://github.com/rishabh3354/TORRENT4K/blob/main/share/license/LICENSE</project_license>
+	<developer id="com.warlordsoftwares">
+		<name translate="no">Warlord Softwares</name>
+	</developer>
+	<branding>
+		<color type="primary" scheme_preference="light">#DCFCE7</color>
+		<color type="primary" scheme_preference="dark">#14532D</color>
+	</branding>
+	<name>Torrent4K</name>
+	<summary>Stream torrents while they download</summary>
+	<summary xml:lang="de">Torrents streamen, während sie laden</summary>
+	<summary xml:lang="es">Mira torrents mientras se descargan</summary>
+	<summary xml:lang="fr">Regardez les torrents pendant le téléchargement</summary>
+	<summary xml:lang="it">Guarda i torrent mentre si scaricano</summary>
+	<summary xml:lang="pt_BR">Assista a torrents enquanto baixam</summary>
+	<summary xml:lang="nl">Bekijk torrents terwijl ze downloaden</summary>
+	<summary xml:lang="sv">Titta på torrents medan de laddas ner</summary>
+	<summary xml:lang="pl">Oglądaj torrenty w trakcie pobierania</summary>
+	<summary xml:lang="ru">Смотрите торренты, пока они загружаются</summary>
+	<summary xml:lang="uk">Дивіться торенти під час завантаження</summary>
+	<summary xml:lang="tr">Torrentleri inerken izleyin</summary>
+	<summary xml:lang="id">Tonton torrent sambil diunduh</summary>
+	<summary xml:lang="vi">Xem torrent ngay khi đang tải</summary>
+	<summary xml:lang="hi">टॉरेंट डाउनलोड होते-होते देखें</summary>
+	<summary xml:lang="ja">ダウンロードしながらトレントを再生</summary>
+	<summary xml:lang="ko">다운로드하면서 토렌트 바로 재생</summary>
+	<summary xml:lang="zh_CN">边下载边播放种子视频</summary>
+	<summary xml:lang="th">ดูทอร์เรนต์ได้ทันทีระหว่างดาวน์โหลด</summary>
+	<summary xml:lang="ar">شاهد ملفات التورنت أثناء تنزيلها</summary>
+	<description>
+		<p>Torrent4K is a torrent client and video player in one. Paste a magnet link, open a .torrent file or search, and the video starts playing in seconds while the rest downloads in the background – in up to 4K, with HDR, surround sound and subtitles.</p>
+		<p xml:lang="de">Torrent4K ist Torrent-Client und Videoplayer in einem. Magnet-Link einfügen, .torrent-Datei öffnen oder suchen – das Video startet in Sekunden, während der Rest im Hintergrund lädt: in bis zu 4K, mit HDR, Surround-Sound und Untertiteln.</p>
+		<p xml:lang="es">Torrent4K es un cliente de torrents y un reproductor de vídeo en uno. Pega un enlace magnet, abre un archivo .torrent o busca, y el vídeo empieza en segundos mientras el resto se descarga en segundo plano: hasta 4K, con HDR, sonido envolvente y subtítulos.</p>
+		<p xml:lang="fr">Torrent4K réunit un client torrent et un lecteur vidéo. Collez un lien magnet, ouvrez un fichier .torrent ou lancez une recherche : la vidéo démarre en quelques secondes pendant que le reste se télécharge en arrière-plan, jusqu'en 4K, avec HDR, son surround et sous-titres.</p>
+		<p xml:lang="it">Torrent4K è un client torrent e un lettore video in un'unica app. Incolla un link magnet, apri un file .torrent o cerca, e il video parte in pochi secondi mentre il resto si scarica in background: fino al 4K, con HDR, audio surround e sottotitoli.</p>
+		<p xml:lang="pt_BR">O Torrent4K é um cliente de torrent e um player de vídeo em um só app. Cole um link magnet, abra um arquivo .torrent ou pesquise, e o vídeo começa em segundos enquanto o resto baixa em segundo plano – em até 4K, com HDR, som surround e legendas.</p>
+		<p xml:lang="nl">Torrent4K is een torrentclient en videospeler in één. Plak een magnetlink, open een .torrent-bestand of zoek, en de video start binnen enkele seconden terwijl de rest op de achtergrond downloadt – in maximaal 4K, met HDR, surroundgeluid en ondertitels.</p>
+		<p xml:lang="sv">Torrent4K är en torrentklient och videospelare i ett. Klistra in en magnetlänk, öppna en .torrent-fil eller sök, så startar videon på några sekunder medan resten laddas ner i bakgrunden – i upp till 4K, med HDR, surroundljud och undertexter.</p>
+		<p xml:lang="pl">Torrent4K to klient torrent i odtwarzacz wideo w jednym. Wklej link magnet, otwórz plik .torrent lub wyszukaj, a film ruszy w kilka sekund, podczas gdy reszta pobiera się w tle – w jakości do 4K, z HDR, dźwiękiem przestrzennym i napisami.</p>
+		<p xml:lang="ru">Torrent4K — торрент-клиент и видеоплеер в одном приложении. Вставьте magnet-ссылку, откройте .torrent-файл или воспользуйтесь поиском, и видео запустится через несколько секунд, пока остальное загружается в фоне, — в качестве до 4K, с HDR, объёмным звуком и субтитрами.</p>
+		<p xml:lang="uk">Torrent4K — торент-клієнт і відеоплеєр в одному застосунку. Вставте magnet-посилання, відкрийте .torrent-файл або скористайтеся пошуком, і відео запуститься за кілька секунд, поки решта завантажується у фоні, — у якості до 4K, з HDR, об'ємним звуком і субтитрами.</p>
+		<p xml:lang="tr">Torrent4K, torrent istemcisi ile video oynatıcıyı tek uygulamada birleştirir. Bir magnet bağlantısı yapıştırın, bir .torrent dosyası açın ya da arama yapın; video saniyeler içinde başlar, geri kalanı arka planda iner – 4K'ya kadar, HDR, surround ses ve altyazılarla.</p>
+		<p xml:lang="id">Torrent4K adalah klien torrent sekaligus pemutar video. Tempel tautan magnet, buka file .torrent, atau cari, dan video mulai diputar dalam hitungan detik sementara sisanya diunduh di latar belakang – hingga 4K, dengan HDR, suara surround, dan subtitle.</p>
+		<p xml:lang="vi">Torrent4K là trình tải torrent kiêm trình phát video. Dán liên kết magnet, mở tệp .torrent hoặc tìm kiếm, video sẽ phát sau vài giây trong khi phần còn lại tải ở chế độ nền – lên đến 4K, có HDR, âm thanh vòm và phụ đề.</p>
+		<p xml:lang="hi">Torrent4K एक ही ऐप में टॉरेंट क्लाइंट और वीडियो प्लेयर है। मैग्नेट लिंक पेस्ट करें, .torrent फ़ाइल खोलें या सर्च करें – वीडियो कुछ ही सेकंड में चलने लगता है और बाकी हिस्सा बैकग्राउंड में डाउनलोड होता रहता है, 4K तक, HDR, सराउंड साउंड और सबटाइटल के साथ।</p>
+		<p xml:lang="ja">Torrent4K はトレントクライアントと動画プレーヤーがひとつになったアプリです。マグネットリンクを貼り付けるか、.torrent ファイルを開くか、検索するだけで、残りをバックグラウンドでダウンロードしながら数秒で再生が始まります。最大 4K、HDR、サラウンド音声、字幕に対応。</p>
+		<p xml:lang="ko">Torrent4K는 토렌트 클라이언트와 동영상 플레이어를 하나로 합친 앱입니다. 마그넷 링크를 붙여넣거나 .torrent 파일을 열거나 검색하면, 나머지는 백그라운드에서 받는 동안 몇 초 만에 재생이 시작됩니다. 최대 4K, HDR, 서라운드 사운드, 자막을 지원합니다.</p>
+		<p xml:lang="zh_CN">Torrent4K 集种子下载客户端与视频播放器于一身。粘贴磁力链接、打开 .torrent 文件或直接搜索，视频几秒内即可开始播放，其余部分在后台继续下载——最高 4K，支持 HDR、环绕声和字幕。</p>
+		<p xml:lang="th">Torrent4K คือโปรแกรมโหลดทอร์เรนต์และเครื่องเล่นวิดีโอในแอปเดียว วางลิงก์ magnet เปิดไฟล์ .torrent หรือค้นหา วิดีโอจะเริ่มเล่นในไม่กี่วินาทีขณะที่ส่วนที่เหลือดาวน์โหลดอยู่เบื้องหลัง สูงสุด 4K พร้อม HDR เสียงรอบทิศทาง และคำบรรยาย</p>
+		<p xml:lang="ar">Torrent4K عميل تورنت ومشغّل فيديو في تطبيق واحد. الصق رابط magnet أو افتح ملف ‎.torrent أو ابحث، فيبدأ الفيديو خلال ثوانٍ بينما يُنزَّل الباقي في الخلفية - بدقة تصل إلى 4K مع HDR وصوت محيطي وترجمات.</p>
+		<p>Watch</p>
+		<ul>
+			<li>Play while it downloads: the pieces you are about to watch come first, and seeking jumps straight there</li>
+			<li>Subtitles from the torrent, from your computer or found online, with automatic sync and dual subtitles</li>
+			<li>Next episode, skip intro and credits by chapters, picture and sound settings, picture-in-picture</li>
+			<li>Cast to Chromecast and DLNA TVs, or control playback from your phone</li>
+		</ul>
+		<p>Find</p>
+		<ul>
+			<li>Search several public torrent indexes at once, with the best copy for your connection picked for you</li>
+			<li>Posters, episodes and similar titles for movies and shows</li>
+			<li>My List: follow shows and RSS feeds</li>
+		</ul>
+		<p>Download</p>
+		<ul>
+			<li>Queue, pause and reorder downloads, choose episodes, limit speed or use slow mode</li>
+			<li>Kill switch: bind torrent traffic to your VPN interface, or use a SOCKS5 proxy</li>
+			<li>Disk guard, private mode, parental lock, and backup and restore</li>
+		</ul>
+		<p>Available in 20 languages, with black, dark and light themes. Free to use; PRO adds casting, phone remote, picture-in-picture and more with a one-time payment.</p>
+		<p>Only download and share content you have the right to.</p>
+	</description>
+	<launchable type="desktop-id">com.warlordsoftwares.torrent4k.desktop</launchable>
+	<categories>
+		<category>AudioVideo</category>
+		<category>Video</category>
+		<category>Network</category>
+		<category>FileTransfer</category>
+		<category>P2P</category>
+	</categories>
+	<keywords>
+		<keyword>torrent</keyword>
+		<keyword>torrent client</keyword>
+		<keyword>torrent player</keyword>
+		<keyword>torrent video player</keyword>
+		<keyword>torrent streaming</keyword>
+		<keyword>stream torrent</keyword>
+		<keyword>watch torrent</keyword>
+		<keyword>magnet</keyword>
+		<keyword>magnet link</keyword>
+		<keyword>bittorrent</keyword>
+		<keyword>bittorrent client</keyword>
+		<keyword>p2p</keyword>
+		<keyword>video player</keyword>
+		<keyword>4k</keyword>
+		<keyword>hdr</keyword>
+		<keyword>mpv</keyword>
+		<keyword>subtitles</keyword>
+		<keyword>chromecast</keyword>
+		<keyword>dlna</keyword>
+		<keyword>downloader</keyword>
+	</keywords>
+	<provides>
+		<mediatype>application/x-bittorrent</mediatype>
+		<mediatype>x-scheme-handler/magnet</mediatype>
+	</provides>
+	<screenshots>
+		<screenshot type="default">
+			<caption>Stream any torrent instantly - pick up where you left off</caption>
+			<image type="source" width="1600" height="900">https://raw.githubusercontent.com/rishabh3354/TORRENT4K/main/share/screenshots/window/1_home.png</image>
+		</screenshot>
+		<screenshot>
+			<caption>Search many sources at once - the best copy for your connection is picked for you</caption>
+			<image type="source" width="1600" height="900">https://raw.githubusercontent.com/rishabh3354/TORRENT4K/main/share/screenshots/window/2_search.png</image>
+		</screenshot>
+		<screenshot>
+			<caption>Watch while it downloads, with subtitles</caption>
+			<image type="source" width="1600" height="900">https://raw.githubusercontent.com/rishabh3354/TORRENT4K/main/share/screenshots/window/3_player.png</image>
+		</screenshot>
+		<screenshot>
+			<caption>Queue, pause and limit your downloads</caption>
+			<image type="source" width="1600" height="900">https://raw.githubusercontent.com/rishabh3354/TORRENT4K/main/share/screenshots/window/4_downloads.png</image>
+		</screenshot>
+		<screenshot>
+			<caption>Plot, cast and files of what you are watching</caption>
+			<image type="source" width="1600" height="900">https://raw.githubusercontent.com/rishabh3354/TORRENT4K/main/share/screenshots/window/5_details.png</image>
+		</screenshot>
+	</screenshots>
+	<url type="homepage">https://warlordsoftwares.com/apps/linux-apps/</url>
+	<url type="vcs-browser">https://github.com/rishabh3354/TORRENT4K</url>
+	<url type="bugtracker">https://github.com/rishabh3354/TORRENT4K/issues</url>
+	<url type="contact">https://warlordsoftwares.com/contact-us/</url>
+	<url type="donation">https://paypal.me/TechRishabh/10</url>
+	<update_contact>contact@warlordsoftwares.com</update_contact>
+	<content_rating type="oars-1.1" />
+	<recommends>
+		<display_length compare="ge">768</display_length>
+		<internet>always</internet>
+	</recommends>
+	<supports>
+		<control>pointing</control>
+		<control>keyboard</control>
+	</supports>
+	<releases>
+		<release version="2026.11.13" date="2026-11-13">
+			<description>
+				<p>First version.</p>
+				<ul>
+					<li>Stream torrents while they download, with the mpv player built in</li>
+					<li>Search several public indexes at once, with posters and show pages</li>
+					<li>Subtitles online and in sync, casting, phone remote and picture-in-picture</li>
+					<li>20 languages, black, dark and light themes</li>
+				</ul>
+			</description>
+		</release>
+	</releases>
+</component>
