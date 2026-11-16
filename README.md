@@ -5,16 +5,15 @@
 
 <p align="center">
   <b>A torrent client and 4K video player in one. Open a magnet link and start watching in seconds.</b><br>
-  For Ubuntu, Fedora, Debian, Linux Mint, Arch and any other Linux.
-  <!-- add "Windows 10 and 11" back when Torrent4K.exe is released -->
+  For Windows 10 and 11, Ubuntu, Fedora, Debian, Linux Mint, Arch and any other Linux.
 </p>
 
 <p align="center">
   <a href="https://snapcraft.io/torrent4k"><img src="https://snapcraft.io/static/images/badges/en/snap-store-black.svg" height="56" alt="Get Torrent4K from the Snap Store"></a>&nbsp;
-  <!-- not released yet - uncomment when they are:
+  <!-- not released yet - uncomment when it is:
   <a href="https://flathub.org/apps/com.warlordsoftwares.torrent4k"><img src="https://flathub.org/api/badge?locale=en" height="56" alt="Get Torrent4K on Flathub"></a>&nbsp;
-  <a href="https://github.com/rishabh3354/TORRENT4K/releases/latest/download/Torrent4K.exe"><img src="https://img.shields.io/badge/Windows-Download%20.exe-0078D6?style=for-the-badge&logo=windows&logoColor=white" height="56" alt="Download the Torrent4K Windows installer (.exe)"></a>&nbsp;
   -->
+  <a href="https://github.com/rishabh3354/TORRENT4K/releases/latest/download/Torrent4K.exe"><img src="https://img.shields.io/badge/Windows-Download%20.exe-0078D6?style=for-the-badge&logo=windows&logoColor=white" height="56" alt="Download the Torrent4K Windows installer (.exe)"></a>&nbsp;
   <a href="https://github.com/rishabh3354/TORRENT4K/releases/latest/download/Torrent4K-x86_64.AppImage"><img src="https://img.shields.io/badge/Linux-AppImage-2ea44f?style=for-the-badge&logo=linux&logoColor=white" height="56" alt="Download the Torrent4K AppImage for Linux"></a>
 </p>
 
@@ -62,7 +61,6 @@ wget https://github.com/rishabh3354/TORRENT4K/releases/latest/download/Torrent4K
 chmod +x Torrent4K-x86_64.AppImage && ./Torrent4K-x86_64.AppImage
 ```
 
-<!-- Windows: uncomment when Torrent4K.exe is released
 ## Install on Windows
 
 Torrent4K runs on **Windows 10 and Windows 11** (64-bit).
@@ -73,7 +71,6 @@ Torrent4K runs on **Windows 10 and Windows 11** (64-bit).
    .torrent files.
 
 If Windows SmartScreen shows "Windows protected your PC", click **More info → Run anyway**.
--->
 
 ## Features
 
