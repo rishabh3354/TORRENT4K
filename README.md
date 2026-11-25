@@ -63,7 +63,7 @@ chmod +x Torrent4K-x86_64.AppImage && ./Torrent4K-x86_64.AppImage
 
 ## Install on Windows
 
-Torrent4K runs on **Windows 10 and Windows 11** (64-bit).
+Torrent4K runs on 64-bit Windows 10 and Windows 11.
 
 1. **[Download Torrent4K.exe](https://github.com/rishabh3354/TORRENT4K/releases/latest/download/Torrent4K.exe)**
    (or pick a version from [all releases](https://github.com/rishabh3354/TORRENT4K/releases)).
